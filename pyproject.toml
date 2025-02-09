@@ -8,7 +8,7 @@ build-backend="hatchling.build"
 [project]
 name = "tadaima"
 authors = [{name = "the tadaima authors", email = "3105306+timkpaine@users.noreply.github.com"}]
-description="Home Automation"
+description = "Home Automation"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 version = "0.1.0"
@@ -17,6 +17,7 @@ keywords = []
 
 classifiers = [
     "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Programming Language :: Python :: 3",
@@ -27,10 +28,6 @@ classifiers = [
 ]
 
 dependencies = []
-
-[project.urls]
-Repository = "https://github.com/timkpaine/tadaima"
-Homepage = "https://github.com/timkpaine/tadaima"
 
 [project.optional-dependencies]
 develop = [
@@ -47,6 +44,10 @@ develop = [
 ]
 
 [project.scripts]
+
+[project.urls]
+Repository = "https://github.com/timkpaine/tadaima"
+Homepage = "https://github.com/timkpaine/tadaima"
 
 [tool.bumpversion]
 current_version = "0.1.0"
@@ -73,8 +74,9 @@ ignore = [
     ".copier-answers.yml",
     "js/pnpm-lock.yaml",
     "Makefile",
-    "setup.py",
-    "tadaima/**/*",
+    "tadaima/extension/**/*",
+    "docs/**/*",
+    "js/dist/**/*",
 ]
 
 [tool.coverage.run]
@@ -100,32 +102,14 @@ artifacts = [
 src = "/"
 
 [tool.hatch.build.targets.sdist]
-include = [
-    "/tadaima",
-    "/js",
-    "LICENSE",
-    "README.md",
-]
+packages = ["tadaima", "js"]
 exclude = [
-    ".copier-answers.yml",
-    "/.github",
-    "/.gitattributes",
-    "/.gitignore",
+    "/js/dist",
     "/js/node_modules",
 ]
 
 [tool.hatch.build.targets.wheel]
-include = [
-    "/tadaima",
-]
-exclude = [
-    ".copier-answers.yml",
-    "/.github",
-    "/.gitattributes",
-    "/.gitignore",
-    "/js/node_modules",
-    "/pyproject.toml",
-]
+packages = ["tadaima"]
 
 [tool.hatch.build.hooks.jupyter-builder]
 build-function = "hatch_jupyter_builder.npm_builder"
