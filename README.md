@@ -6,7 +6,6 @@ Home Automation
 [![codecov](https://codecov.io/gh/timkpaine/tadaima/branch/main/graph/badge.svg)](https://codecov.io/gh/timkpaine/tadaima)
 [![License](https://img.shields.io/github/license/timkpaine/tadaima)](https://github.com/timkpaine/tadaima)
 [![PyPI](https://img.shields.io/pypi/v/tadaima.svg)](https://pypi.python.org/pypi/tadaima)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/timkpaine/tadaima/main?urlpath=lab)
 
 ## Overview
 
