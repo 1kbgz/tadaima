@@ -7,7 +7,7 @@ build-backend="hatchling.build"
 
 [project]
 name = "tadaima"
-authors = [{name = "the tadaima authors", email = "3105306+timkpaine@users.noreply.github.com"}]
+authors = [{name = "the tadaima authors", email = "t.paine154@gmail.com"}]
 description = "Home Automation"
 readme = "README.md"
 license = { text = "Apache-2.0" }
@@ -47,8 +47,8 @@ develop = [
 [project.scripts]
 
 [project.urls]
-Repository = "https://github.com/timkpaine/tadaima"
-Homepage = "https://github.com/timkpaine/tadaima"
+Repository = "https://github.com/1kbgz/tadaima"
+Homepage = "https://github.com/1kbgz/tadaima"
 
 [tool.bumpversion]
 current_version = "0.1.0"
