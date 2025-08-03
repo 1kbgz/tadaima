@@ -139,10 +139,13 @@ js/dist
 js/lib
 js/node_modules
 js/*.tgz
+tadaima/extension
 
 # Jupyter
 .ipynb_checkpoints
 .autoversion
+!tadaima/extension/tadaima.json
+!tadaima/extension/install.json
 tadaima/nbextension
 tadaima/labextension
 
