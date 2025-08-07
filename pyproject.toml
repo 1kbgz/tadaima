@@ -25,7 +25,13 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 
-dependencies = []
+dependencies = [
+    "ccflow",
+    "hydra-core",
+    "pydantic",
+    "rich",
+    "typer",
+]
 
 [project.optional-dependencies]
 develop = [
@@ -42,6 +48,9 @@ develop = [
     "ruff",
     "twine",
     "wheel",
+    # Backends
+    "python-kasa",
+    "govee_led_wez",
 ]
 
 [project.scripts]
