@@ -141,14 +141,12 @@ js/node_modules
 js/test-results
 js/playwright-report
 js/*.tgz
-tadaima/extension
 
 # Jupyter
 .ipynb_checkpoints
 .autoversion
 Untitled*.ipynb
-!tadaima/extension/tadaima.json
-!tadaima/extension/install.json
+tadaima/extension
 tadaima/nbextension
 tadaima/labextension
 
@@ -157,3 +155,7 @@ tadaima/labextension
 
 # Rust
 target
+
+# Hydra
+outputs/
+multirun/
