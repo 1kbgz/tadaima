@@ -1,4 +1,4 @@
-from tadaima import *  # noqa
+from tadaima import *
 
 
 def test_all():
